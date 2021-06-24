@@ -14,7 +14,7 @@ services:
       context: .
     volumes:
     - ./config/kafka-1/server.properties:/kafka/config/server.properties
-    - ./data/kafka-1/:/tmp/kafka-logs/
+    #- ./data/kafka-1/:/tmp/kafka-logs/
   kafka-2:
     container_name: kafka-2
     image: aimvector/kafka:2.7.0
@@ -22,7 +22,7 @@ services:
       context: .
     volumes:
     - ./config/kafka-2/server.properties:/kafka/config/server.properties
-    - ./data/kafka-2/:/tmp/kafka-logs/
+    #- ./data/kafka-2/:/tmp/kafka-logs/
   kafka-3:
     container_name: kafka-3
     image: aimvector/kafka:2.7.0
@@ -30,7 +30,7 @@ services:
       context: .
     volumes:
     - ./config/kafka-3/server.properties:/kafka/config/server.properties
-    - ./data/kafka-3/:/tmp/kafka-logs/
+    #- ./data/kafka-3/:/tmp/kafka-logs/
   kafka-producer:
     container_name: kafka-producer
     image: aimvector/kafka:2.7.0
